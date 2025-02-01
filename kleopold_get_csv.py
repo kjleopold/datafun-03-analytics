@@ -89,7 +89,7 @@ def main():
     """
     Main function to demonstrate fetching CSV data.
     """
-    csv_url = 'https://raw.githubusercontent.com/kjleopold/datafun-03-analytics/refs/heads/main/Super_Bowl_Data.csv'
+    csv_url = 'https://raw.githubusercontent.com/kjleopold/test_datasets/refs/heads/main/Super_Bowl_Data.csv'
     logger.info("Starting CSV fetch demonstration...")
     fetch_csv_file(fetched_folder_name, "super_bowl_data.csv", csv_url)
 
