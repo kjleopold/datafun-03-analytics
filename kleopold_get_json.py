@@ -1,6 +1,6 @@
 """
-This example file fetches JSON data of astronauts currently in space 
-from the web and saves it to a local file named example_data/astronauts.json.
+This example file fetches JSON data of Super Bowl data from 1967 to 2024 
+from the web and saves it to a local file named super_bowl_data.json in a folder named kleopold_data.
 
 TODO: Save a copy of the provided utils_logger.py file 
 in the same folder as this file.
@@ -24,7 +24,7 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-fetched_folder_name = "example_data"
+fetched_folder_name = "kleopold_data"
 
 #####################################
 # Define Functions
@@ -90,9 +90,9 @@ def main():
     """
     Main function to demonstrate fetching JSON data.
     """
-    json_url = 'http://api.open-notify.org/astros.json'
+    json_url = 'https://raw.githubusercontent.com/kjleopold/test_datasets/refs/heads/main/Super_Bowl_Data.json'
     logger.info("Starting JSON fetch demonstration...")
-    fetch_json_file(fetched_folder_name, "astros.json", json_url)
+    fetch_json_file(fetched_folder_name, "super_bowl.json", json_url)
 
 #####################################
 # Conditional Execution
