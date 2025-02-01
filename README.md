@@ -20,7 +20,7 @@ Follow the below outline for beginning a new project:
     *After subsequent changes, may be able to use `git push`*
 
 5. ALWAYS Create a local Python Virtual Environment for the project
-    * Run py -m venv .venv from the project root directory
+    * Run `py -m venv .venv` from the project root directory
 
 ## Continue with the repeatable project work flow:
 1. Pull the latest changes from GitHub

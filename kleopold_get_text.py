@@ -1,6 +1,6 @@
 """
-This example file fetches a text file of Romeo and Juliet from the web 
-and saves it to a local file named romeo.txt in a folder named example_data.
+This example file fetches a text file of Wicked from the web 
+and saves it to a local file named wicked.txt in a folder named example_data.
 
 Please save a copy of the provided utils_logger.py file 
 in the same folder as this file.
@@ -23,7 +23,7 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-fetched_folder_name = "example_data"
+fetched_folder_name = "kleopold_data"
 
 #####################################
 # Define Functions
@@ -89,9 +89,9 @@ def main():
     """
     Main function to demonstrate fetching text data.
     """
-    txt_url = 'https://raw.githubusercontent.com/denisecase/datafun-03-analytics/main/hosted/romeo.txt'
+    txt_url = 'https://raw.githubusercontent.com/kjleopold/test_datasets/refs/heads/main/Wicked_Play%20Script.txt'
     logger.info("Starting text fetch demonstration...")
-    fetch_txt_file(fetched_folder_name, "romeo.txt", txt_url)
+    fetch_txt_file(fetched_folder_name, "wicked.txt", txt_url)
 
 #####################################
 # Conditional Execution
