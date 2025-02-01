@@ -16,8 +16,8 @@ Follow the below outline for beginning a new project:
 4. IF starting from scratch only: Use Git to add, commit, and push new files to GitHub
     * `git add .`
     * `git commit -m "Add meaningful comment"`
-    * `git push -u origin main`
-    *After subsequent changes, may be able to use git push*
+    * `git push -u origin main`  
+    *After subsequent changes, may be able to use `git push`*
 
 5. ALWAYS Create a local Python Virtual Environment for the project
     * Run py -m venv .venv from the project root directory
