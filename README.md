@@ -53,7 +53,7 @@ Follow the below outline for beginning a new project:
 
 Run through this repeatable workflow as the project develops. 
 
-###P3: Working With Data Workflow
+### P3: Working With Data Workflow
 1. Set up the project
     * Set up repo datafun-03-analytics in GitHub
     * Cloned repo down to my machine
