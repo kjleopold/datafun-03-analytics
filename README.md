@@ -1,7 +1,7 @@
 # datafun-03-analytics
 Module 3 Assignments
 
-Follow the below outline for beginning a new project:
+Follow the below outline for beginning a new project:  
 *Note: steps in project initialization only need performed once per project*
 
 ## Start with project initialization:
