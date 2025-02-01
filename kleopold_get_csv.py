@@ -1,6 +1,6 @@
 """
 This example file fetches a CSV file from the web 
-and saves it to a local file named super_bowl_data.csv in a folder named kleopold_data.
+and saves it to a local file named spotify_data.csv in a folder named kleopold_data.
 
 Please save a copy of the provided utils_logger.py file 
 in the same folder as this file.
@@ -89,9 +89,9 @@ def main():
     """
     Main function to demonstrate fetching CSV data.
     """
-    csv_url = 'https://raw.githubusercontent.com/kjleopold/test_datasets/refs/heads/main/Super_Bowl_Data.csv'
+    csv_url = 'https://github.com/kjleopold/test_datasets/raw/refs/heads/main/spotify-2023.csv'
     logger.info("Starting CSV fetch demonstration...")
-    fetch_csv_file(fetched_folder_name, "super_bowl_data.csv", csv_url)
+    fetch_csv_file(fetched_folder_name, "spotify_data.csv", csv_url)
 
 #####################################
 # Conditional Execution
