@@ -90,6 +90,10 @@ The script returns the highest scoring Super Bowl, the team that has made the mo
 - **`kleopold_process_txt.py`**  
 The script returns how many times the word "Oz" occurs in the playscript 
 
+### 8. Saved work with git add-commit-push frequently
+
+### 9. Updated README.md to Describe Work
+
 ## Execution Commands
 ### Fetchers
 `py kleopold_get_csv.py`  
@@ -101,9 +105,5 @@ The script returns how many times the word "Oz" occurs in the playscript
 `py kleopold_process_csv.py`  
 `py kleopold_process_excel.py`  
 `py kleopold_process_json.py`  
-`py kleopold_process_txt.py`  
-
-### 8. Saved work with git add-commit-push frequently
-
-### 9. Updated README.md to Describe Work
+`py kleopold_process_txt.py`
 
