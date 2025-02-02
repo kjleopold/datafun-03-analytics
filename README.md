@@ -72,23 +72,23 @@ Run through this repeatable workflow as the project develops.
 
 ### 6. Created, ran, and git add-commit-pushed data fetchers 
 **kleopold_get_csv.py**  
-Fetches a CSV file with Spotify streaming data for 2023  
+* Fetches a CSV file with Spotify streaming data for 2023  
 **kleopold_get_excel.py**  
-Fetches an excel file with movie titles and their box office earnings data  
+* Fetches an excel file with movie titles and their box office earnings data  
 **kleopold_get_json.py**  
-Fetches a JSON file with Super Bowl data from 1967 to 2024  
+* Fetches a JSON file with Super Bowl data from 1967 to 2024  
 **kleopold_get_txt.py**  
 Fetches a text file with the full script for the Broadway Musical Wicked
 
 ### 7. Created and ran data processors
 **kleopold_process_csv.py**  
-The script returns the most streamed track and artist  
+* The script returns the most streamed track and artist  
 **kleopold_process_excel.py**  
-The script returns the movie title and amount of the max and min box office earnings and the average earnings over all  
+* The script returns the movie title and amount of the max and min box office earnings and the average earnings over all  
 **kleopold_process_json.py**  
-The script returns the highest scoring Super Bowl, the team that has made the most appearances, and the average point spread  
+* The script returns the highest scoring Super Bowl, the team that has made the most appearances, and the average point spread  
 **kleopold_process_txt.py**  
-The script returns how many times the word "Oz" occurs in the play  
+* The script returns how many times the word "Oz" occurs in the play  
 
 ### Fetchers:
 py kleopold_get_csv.py  
