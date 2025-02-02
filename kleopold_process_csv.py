@@ -22,7 +22,7 @@ from utils_logger import logger
 #####################################
 
 fetched_folder_name: str = "kleopold_data"
-processed_folder_name: str = "kleopold_processed"
+processed_folder_name: str = "kleopold_data_processed"
 
 #####################################
 # Define Functions

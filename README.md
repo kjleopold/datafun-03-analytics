@@ -73,4 +73,5 @@ Run through this repeatable workflow as the project develops.
     * Set up scripts to fetch data from test_datasets
     * Fetched data for each file type
     * Git add-commit-push between each fetch
+    * Create Python script to read the data, process it, and save it in a folder named kleopold_data_processed.
 
