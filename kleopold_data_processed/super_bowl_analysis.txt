@@ -1,4 +1,4 @@
 Super Bowl Analysis:
-Most Super Bowl Wins: Pittsburgh Steelers with 6
-Most Super Bowl Appearances: New England Patriots with 11 appearances.
-Average Point Spread: 13 points.
+Most Super Bowl Wins: Pittsburgh Steelers with 6 wins
+Most Super Bowl Appearances: New England Patriots with 11 appearances
+Average Point Spread: 13 points

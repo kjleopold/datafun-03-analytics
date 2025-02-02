@@ -340,3 +340,11 @@
 2025-02-02 12:45:23.048 | INFO     | __main__:<module>:108 - Starting JSON processing...
 2025-02-02 12:45:23.049 | INFO     | __main__:process_json_file:101 - Processed JSON file: kleopold_data\super_bowl.json, Results saved to: kleopold_data_processed\super_bowl_analysis.txt
 2025-02-02 12:45:23.049 | INFO     | __main__:<module>:110 - JSON processing complete.
+2025-02-02 12:58:49.055 | INFO     | utils_logger:<module>:39 - Logging to file: logs\project_log.log
+2025-02-02 12:58:49.055 | INFO     | __main__:<module>:108 - Starting JSON processing...
+2025-02-02 12:58:49.056 | INFO     | __main__:process_json_file:101 - Processed JSON file: kleopold_data\super_bowl.json, Results saved to: kleopold_data_processed\super_bowl_analysis.txt
+2025-02-02 12:58:49.056 | INFO     | __main__:<module>:110 - JSON processing complete.
+2025-02-02 12:59:30.766 | INFO     | utils_logger:<module>:39 - Logging to file: logs\project_log.log
+2025-02-02 12:59:30.766 | INFO     | __main__:<module>:108 - Starting JSON processing...
+2025-02-02 12:59:30.767 | INFO     | __main__:process_json_file:101 - Processed JSON file: kleopold_data\super_bowl.json, Results saved to: kleopold_data_processed\super_bowl_analysis.txt
+2025-02-02 12:59:30.767 | INFO     | __main__:<module>:110 - JSON processing complete.

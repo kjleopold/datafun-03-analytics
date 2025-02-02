@@ -94,9 +94,9 @@ def process_json_file():
     with output_file.open('w') as file:
         file.write("Super Bowl Analysis:\n")
 
-        file.write(f"Most Super Bowl Wins: {stats['most_wins']['team']} with {win_count['wins']}\n"),
-        file.write(f"Most Super Bowl Appearances: {stats['most_appearances']['team']} with {stats['most_appearances']['appearances']} appearances.\n"),
-        file.write(f"Average Point Spread: {stats['average_point_spread']['average_point_spread']} points.\n"),
+        file.write(f"Most Super Bowl Wins: {stats['most_wins']['team']} with {win_count['wins']} wins\n"),
+        file.write(f"Most Super Bowl Appearances: {stats['most_appearances']['team']} with {stats['most_appearances']['appearances']} appearances\n"),
+        file.write(f"Average Point Spread: {stats['average_point_spread']['average_point_spread']} points\n"),
     
     logger.info(f"Processed JSON file: {input_file}, Results saved to: {output_file}")
 
