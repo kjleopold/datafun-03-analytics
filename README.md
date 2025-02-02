@@ -90,13 +90,14 @@ The script returns the highest scoring Super Bowl, the team that has made the mo
 - **`kleopold_process_txt.py`**  
 The script returns how many times the word "Oz" occurs in the playscript 
 
-### Fetchers:
+## Execution Commands
+### Fetchers
 `py kleopold_get_csv.py`  
 `py kleopold_get_excel.py`  
 `py kleopold_get_json.py`  
 `py kleopold_get_txt.py`  
 
-### Processors:
+### Processors
 `py kleopold_process_csv.py`  
 `py kleopold_process_excel.py`  
 `py kleopold_process_json.py`  
