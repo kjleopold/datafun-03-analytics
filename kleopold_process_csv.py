@@ -39,7 +39,7 @@ def analyze_spotify_data(file_path: pathlib.Path) -> dict:
         # Open the file for reading
         with file_path.open('r') as file:
             # csv.DictReader() methods to read into a DictReader so we can access named columns in the csv file
-            dict_reader = csv.DictReader(file)  
+            dict_reader = csv.DictReader(file)  #Read the CSV as a dictionary
             for row in dict_reader:
                 try:
                     artist = str(row["artist(s)_name"])  # Extract artist name
@@ -48,31 +48,31 @@ def analyze_spotify_data(file_path: pathlib.Path) -> dict:
 
                     # Append the artist, track, and streams to their respective lists
                     artist_list.append(artist)
-                    track_list.append((track, streams)) # Store both track name and stream count
+                    track_list.append((track, artist, streams)) # Store track name, artist name, and stream count
                     stream_list.append(streams)
 
                 except KeyError as e:
                     logger.warning(f"Skipping row due to missing key: {row} ({e})")
                 except ValueError as e:
                     logger.warning(f"Skipping invalid row: {row} ({e})")
+
+        # Check if the lists are empty and return empty data if necessary
+        if not artist_list:
+            logger.warning("No artist data found in the CSV file.")
+            return {"most_streamed_track": {}, "most_streamed_artist": {}}
         
         # Find the most streamed track (the track with the highest number of streams)
-        most_streamed_track = max(track_list, key=lambda x: x[1])  # Find the track with the highest streams
+        most_streamed_track = max(track_list, key=lambda x: x[2])  # Find the track with the highest streams
 
         # Count the occurrences of each artist using Counter
         artist_counter = Counter(artist_list)
-
-        # Check if artist_counter is empty
-        if not artist_counter:
-            logger.warning("No valid artist data to count.")
-            return{}
 
         # Find the most streamed artist (the one with the most occurrences)
         most_streamed_artist = artist_counter.most_common(1)[0]
 
         # Return a dictionary with the results
         return { 
-            "most_streamed_track": {"track": most_streamed_track[0], "streams": most_streamed_track[1]},
+            "most_streamed_track": {"track": most_streamed_track[0], "streams": most_streamed_track[2], "artist": most_streamed_track[1]},
             "most_streamed_artist": {"artist": most_streamed_artist[0], "appearance": most_streamed_artist[1]}
         }
   
@@ -104,7 +104,7 @@ def process_csv_file():
         artist_data = stats.get('most_streamed_artist',{})
         
         if track_data:
-            file.write(f"Most Streamed Track: {stats['most_streamed_track']['track']}\n")
+            file.write(f"Most Streamed Track: {stats['most_streamed_track']['track']} by {track_data['artist']}\n")
         
         else:
             file.write("Most Streamed Track: Data not available\n")
