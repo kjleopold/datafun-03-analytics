@@ -53,25 +53,57 @@ Follow the below outline for beginning a new project:
 
 Run through this repeatable workflow as the project develops. 
 
-### P3: Working With Data Workflow
-1. Set up the project
-    * Set up repo datafun-03-analytics in GitHub
-    * Cloned repo down to my machine
-    * Opened folder in VS Code
-    * Added .gitignore file
-    * Added requirements.txt
-    * Installed required packages via requirements.txt
+## P3: Working With Data Workflow
 
-2. Run the Examples
-    * Copied example data and process files from example repo
-    * Read, reviewed, and ran each example script
+### Set up the project
+    Set up repo datafun-03-analytics in GitHub
 
-3. Create and run my own data fetchers
-    * Searched for files on the web for CSV, Excel, JSON, and text and saved to my machine
-    * Set up new repo, test_datasets, to house data files in order to easily retrieve URLs
-    * Added files to test_datasets via git add-commit-push
-    * Set up scripts to fetch data from test_datasets
-    * Fetched data for each file type
-    * Git add-commit-push between each fetch
-    * Create Python script to read the data, process it, and save it in a folder named kleopold_data_processed.
+### Installed required packages via requirements.txt
+* pip
+* loguru
+* requests
+* openpyxl
+* pandas
+
+### Copied example data and process files from example repo
+
+### Read, reviewed, and ran each example script
+
+### Searched for files on the web in CSV, Excel, JSON, and text format.
+
+### Created, ran, and git add-commit-pushed data fetchers 
+* kleopold_get_csv.py
+    Fetches a CSV file with Spotify streaming data for 2023
+* kleopold_get_excel.py
+    Fetches an excel file with movie titles and their box office earnings data
+* kleopold_get_json.py
+    Fetches a JSON file with Super Bowl data from 1967 to 2024
+* kleopold_get_txt.py
+    Fetches a text file with the full script for the Broadway Musical Wicked
+
+### Created and ran data processors
+* kleopold_process_csv.py
+    The script returns the most streamed track and artist
+* kleopold_process_excel.py
+    The script returns the movie title and amount of the max and min box office earnings and the average earnings over all
+* kleopold_process_json.py
+    The script returns the highest scoring Super Bowl, the team that has made the most appearances, and the average point spread
+* kleopold_process_txt.py
+    The script returns how many times the word "Oz" occurs in the play
+
+### Fetchers
+py kleopold_get_csv.py
+py kleopold_get_excel.py
+py kleopold_get_json.py
+py kleopold_get_txt.py
+
+### Processors
+py kleopold_process_csv.py
+py kleopold_process_excel.py
+py kleopold_process_json.py
+py kleopold_process_txt.py
+
+### Saved work with git add-commit-push frequently
+
+### Updated README.md to Describe Work
 
