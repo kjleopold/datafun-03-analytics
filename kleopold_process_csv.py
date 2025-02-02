@@ -10,7 +10,6 @@ Process a CSV file to calculate what artist and track had the most streams on Sp
 import pathlib
 import csv
 import statistics
-import math
 import pandas as pd
 from collections import Counter
 
@@ -55,11 +54,6 @@ def analyze_spotify_data(file_path: pathlib.Path) -> dict:
                     logger.warning(f"Skipping row due to missing key: {row} ({e})")
                 except ValueError as e:
                     logger.warning(f"Skipping invalid row: {row} ({e})")
-
-        # Check if the lists are empty and return empty data if necessary
-        if not artist_list:
-            logger.warning("No artist data found in the CSV file.")
-            return {"most_streamed_track": {}, "most_streamed_artist": {}}
         
         # Find the most streamed track (the track with the highest number of streams)
         most_streamed_track = max(track_list, key=lambda x: x[2])  # Find the track with the highest streams
@@ -76,9 +70,6 @@ def analyze_spotify_data(file_path: pathlib.Path) -> dict:
             "most_streamed_artist": {"artist": most_streamed_artist[0], "appearance": most_streamed_artist[1]}
         }
   
-    except FileNotFoundError:
-        logger.error(f"File not found: {file_path}")
-        return {"most_stremed_track":{}, "most_streamed_artist": {}}
     except Exception as e:
         logger.error(f"Error processing CSV file: {e}")
         return {"most_stremed_track":{}, "most_streamed_artist": {}}
@@ -102,19 +93,9 @@ def process_csv_file():
         file.write("Spotify Streaming Analysis (2023):\n")
 
         track_data = stats.get('most_streamed_track',{})
-        artist_data = stats.get('most_streamed_artist',{})
         
-        if track_data:
-            file.write(f"Most Streamed Track: {stats['most_streamed_track']['track']} by {track_data['artist']}\n")
-        
-        else:
-            file.write("Most Streamed Track: Data not available\n")
-        
-        if artist_data:
-            file.write(f"Most Streamed Artist: {stats['most_streamed_artist']['artist']}\n")
-        
-        else:
-            file.write('Most Streamed Artist: Data not available\n')
+        file.write(f"Most Streamed Track: {stats['most_streamed_track']['track']} by {track_data['artist']}\n"),
+        file.write(f"Most Streamed Artist: {stats['most_streamed_artist']['artist']}\n"),
     
     logger.info(f"Processed CSV file: {input_file}, Statistics saved to: {output_file}")
 
