@@ -88,7 +88,7 @@ The script returns the movie title and amount of the max and min box office earn
 - **`kleopold_process_json.py`**  
 The script returns the highest scoring Super Bowl, the team that has made the most appearances, and the average point spread  
 - **`kleopold_process_txt.py`**  
-The script returns how many times the word "Oz" occurs in the play  
+The script returns how many times the word "Oz" occurs in the playscript 
 
 ### Fetchers:
 `py kleopold_get_csv.py`  
