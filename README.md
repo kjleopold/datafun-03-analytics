@@ -81,14 +81,14 @@ Run through this repeatable workflow as the project develops.
 Fetches a text file with the full script for the Broadway Musical Wicked
 
 ### 7. Created and ran data processors
-**kleopold_process_csv.py**  
-* The script returns the most streamed track and artist  
-**kleopold_process_excel.py**  
-* The script returns the movie title and amount of the max and min box office earnings and the average earnings over all  
-**kleopold_process_json.py**  
-* The script returns the highest scoring Super Bowl, the team that has made the most appearances, and the average point spread  
-**kleopold_process_txt.py**  
-* The script returns how many times the word "Oz" occurs in the play  
+- **`kleopold_process_csv.py`**  
+The script returns the most streamed track and artist  
+- **`kleopold_process_excel.py`** 
+The script returns the movie title and amount of the max and min box office earnings and the average earnings over all  
+- **`kleopold_process_json.py`**  
+The script returns the highest scoring Super Bowl, the team that has made the most appearances, and the average point spread  
+- **`kleopold_process_txt.py`**  
+The script returns how many times the word "Oz" occurs in the play  
 
 ### Fetchers:
 py kleopold_get_csv.py  
