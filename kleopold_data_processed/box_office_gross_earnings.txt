@@ -1,0 +1,4 @@
+Box Office Statistics:
+Highest Grossing Movie: Avengers: Endgame with earnings of 157,461,641.00
+Lowest Grossing Movie: Meeting Gorbachev with earnings of 1.00
+Average Box Office Earnings: 649,284.19

@@ -93,12 +93,13 @@ def process_csv_file():
     if not stats or 'most_streamed_track' not in stats or 'most_streamed_artist' not in stats: 
         logger.error("No statistics to write. Skipping file output.")
         return
+    
     # Ensure the output directory exists
     output_file.parent.mkdir(parents=True, exist_ok=True)
     
     # Save the results to a text file
     with output_file.open('w') as file:
-        file.write("Spotify Streaming Statistics (2023):\n")
+        file.write("Spotify Streaming Analysis (2023):\n")
 
         track_data = stats.get('most_streamed_track',{})
         artist_data = stats.get('most_streamed_artist',{})
