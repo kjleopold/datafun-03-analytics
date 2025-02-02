@@ -91,16 +91,16 @@ The script returns the highest scoring Super Bowl, the team that has made the mo
 The script returns how many times the word "Oz" occurs in the play  
 
 ### Fetchers:
-py kleopold_get_csv.py  
-py kleopold_get_excel.py  
-py kleopold_get_json.py  
-py kleopold_get_txt.py  
+`py kleopold_get_csv.py`  
+`py kleopold_get_excel.py`  
+`py kleopold_get_json.py`  
+`py kleopold_get_txt.py`  
 
 ### Processors:
-py kleopold_process_csv.py  
-py kleopold_process_excel.py  
-py kleopold_process_json.py  
-py kleopold_process_txt.py  
+`py kleopold_process_csv.py`  
+`py kleopold_process_excel.py`  
+`py kleopold_process_json.py`  
+`py kleopold_process_txt.py`  
 
 ### 8. Saved work with git add-commit-push frequently
 
