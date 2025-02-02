@@ -55,54 +55,54 @@ Run through this repeatable workflow as the project develops.
 
 ## P3: Working With Data Workflow
 
-### Set up the project as data-03-analytics in GitHub
+### 1. Set up the project as data-03-analytics in GitHub
 
-### Installed required packages via requirements.txt
+### 2. Installed required packages via requirements.txt
 * pip
 * loguru
 * requests
 * openpyxl
 * pandas
 
-### Copied example data and process files from example repo
+### 3. Copied example data and process files from example repo
 
-### Read, reviewed, and ran each example script
+### 4. Read, reviewed, and ran each example script
 
-### Searched for files on the web in CSV, Excel, JSON, and text format.
+### 5. Searched for files on the web in CSV, Excel, JSON, and text format
 
-### Created, ran, and git add-commit-pushed data fetchers 
+### 6. Created, ran, and git add-commit-pushed data fetchers 
 kleopold_get_csv.py
-* Fetches a CSV file with Spotify streaming data for 2023
+* Fetches a CSV file with Spotify streaming data for 2023  
 kleopold_get_excel.py
-* Fetches an excel file with movie titles and their box office earnings data
+* Fetches an excel file with movie titles and their box office earnings data  
 kleopold_get_json.py
-* Fetches a JSON file with Super Bowl data from 1967 to 2024
+* Fetches a JSON file with Super Bowl data from 1967 to 2024  
 kleopold_get_txt.py
-* Fetches a text file with the full script for the Broadway Musical Wicked
+* Fetches a text file with the full script for the Broadway Musical Wicked  
 
-### Created and ran data processors
+### 7. Created and ran data processors
 kleopold_process_csv.py
-* The script returns the most streamed track and artist
+* The script returns the most streamed track and artist  
 kleopold_process_excel.py
-* The script returns the movie title and amount of the max and min box office earnings and the average earnings over all
+* The script returns the movie title and amount of the max and min box office earnings and the average earnings over all  
 kleopold_process_json.py
-* The script returns the highest scoring Super Bowl, the team that has made the most appearances, and the average point spread
+* The script returns the highest scoring Super Bowl, the team that has made the most appearances, and the average point spread  
 kleopold_process_txt.py
-* The script returns how many times the word "Oz" occurs in the play
+* The script returns how many times the word "Oz" occurs in the play  
 
-### Fetchers
+### Fetchers:
 py kleopold_get_csv.py  
 py kleopold_get_excel.py  
 py kleopold_get_json.py  
 py kleopold_get_txt.py  
 
-### Processors
+### Processors:
 py kleopold_process_csv.py  
 py kleopold_process_excel.py  
 py kleopold_process_json.py  
 py kleopold_process_txt.py  
 
-### Saved work with git add-commit-push frequently
+### 8. Saved work with git add-commit-push frequently
 
-### Updated README.md to Describe Work
+### 9. Updated README.md to Describe Work
 
