@@ -98,7 +98,7 @@ def process_csv_file():
     
     # Save the results to a text file
     with output_file.open('w') as file:
-        file.write("Spotify Spreaming Statistics (2023):\n")
+        file.write("Spotify Streaming Statistics (2023):\n")
 
         track_data = stats.get('most_streamed_track',{})
         artist_data = stats.get('most_streamed_artist',{})
